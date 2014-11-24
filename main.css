@@ -1,0 +1,469 @@
+@font-face {
+    font-family:"Matura";
+    src: url("Matura.ttf");
+}
+
+@font-face {
+	font-family:"Buxton";
+    src: url("Buxton.ttf");
+}
+
+body{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 100%;
+    bottom: 100%;
+	margin:0px;
+	width:100%;
+	height:100%;
+}
+
+.float-pls{
+	z-index: 99;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	height:40px;
+	width:100%;
+	background-image: url("toolbar-fondo.png");
+
+	font-family: 'Buxton';
+	font-size: 20px;
+
+	-webkit-box-shadow: 0px -2px 5px 0px rgba(0, 0, 7, 0.75);
+	-moz-box-shadow:    0px -2px 5px 0px rgba(0, 0, 7, 0.75);
+	box-shadow:         0px -2px 5px 0px rgba(0, 0, 7, 0.75);
+
+}
+
+.main{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+
+	background-color:#222222;
+	background-repeat: repeat;
+}
+
+.header{
+	position:absolute;
+	left: 0px;
+
+	top: 0px;
+	width: 100%;
+	height: 350px;
+
+	background-image: url("header-fondo.png");
+
+	-webkit-box-shadow: 0px 5px 66px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 66px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 66px 1px rgba(0,0,0,0.75);
+
+	transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+
+	z-index: 40;
+}
+
+.header:hover{
+	background-image: url("header-fondo-2.png");
+}
+
+.logo{
+	position:absolute;
+	left:50%;
+	top:100px;
+	width:721px;
+	height:168px;
+	margin-left:-360px;
+
+	background-image: url("header-logo.png");
+	z-index: 40;
+}
+
+.background-logo{
+	position:absolute;
+	left:50%;
+	top:0px;
+	width:721px;
+	height:350px;
+	margin-left:-360px;
+
+	background-image: url("header-logo-background.png");
+	z-index: 39;
+}
+
+.header-arbol-1{
+	position:absolute;
+	bottom:0px;
+	width:286px;
+	height:357px;
+	z-index:;
+
+	right:100px;
+
+	background-image: url('header-arbol-2.png');
+}
+
+.header-arbol-2{
+	position:absolute;
+	bottom:0px;
+	width:286px;
+	height:357px;
+	z-index:;
+
+	left:100px;
+
+	background-image: url('header-arbol-1.png');
+}
+
+.toolbar{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	width:100%;
+	height:40px;
+
+	background-image: url("toolbar-fondo.png");
+	z-index: 41;
+
+	transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+
+	font-family: 'Buxton';
+	font-size: 20px;
+}
+
+.toolbar:hover{
+	-webkit-box-shadow: 0px 5px 66px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 66px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 66px 1px rgba(0,0,0,0.75);
+
+}
+
+.toolbar-stripe{
+	position:absolute;
+	bottom: 0px;
+	height:5px;
+	width:100%;
+	z-index: 60;
+
+	background-color:#000;
+}
+
+.toolbar-button-1{
+	float:left;
+	width:200px;
+	height:40px;
+
+	margin-right: 20px;
+
+	background-image: url("toolbar-button.png");	
+
+	transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+
+	text-align: center;
+	line-height: 42px;
+	color: #fff;
+
+	cursor:default;
+	z-index:61;
+}
+
+.toolbar-button-1:hover{
+	background-color: #59B200;
+}
+
+.toolbar-button-1:active{
+	background-color: blue;
+}
+
+.toolbar-button-2{
+	float:left;
+	width:200px;
+	height:40px;
+
+	margin-right: 20px;
+
+	background-image: url("toolbar-button.png");	
+
+	transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+
+	text-align: center;
+	line-height: 42px;
+	color: #fff;
+
+	cursor:default;
+	z-index:62;
+}
+
+.toolbar-button-2:hover{
+	background-color: #D90000;
+}
+
+.toolbar-button-2:active{
+	background-color: blue;
+}
+
+.rana{
+	position:absolute;
+	left:-80px;
+	top:140px;
+	height:320px;
+	width:320px;
+
+	background-image: url('body-juego-rana.png');
+
+	animation: vaiven-rana 3s infinite;
+	-webkit-animation: vaiven-rana 3s infinite;
+	-moz-animation: vaiven-rana 3s infinite;
+	-o-animation: vaiven-rana 3s infinite;
+}
+
+.rana:hover{
+	animation: giro-rana 2s infinite;
+	-webkit-animation: giro-rana 2s infinite;
+	-moz-animation: giro-rana 2s infinite;
+	-o-animation: giro-rana 2s infinite;
+}
+
+.toolbar-button-3{
+	float:left;
+	width:200px;
+	height:40px;
+
+	margin-right: 20px;
+
+	background-image: url("toolbar-button.png");	
+
+	transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+
+	text-align: center;
+	line-height: 42px;
+	color: #fff;
+
+	cursor:default;
+	z-index:62;
+}
+
+.toolbar-button-3:hover{
+	background-color: #FBC522;
+}
+
+.toolbar-button-3:active{
+	background-color: blue;
+}
+
+.contenido{
+	position: absolute;
+	top:350px;
+	left:0px;
+	width:100%;
+	height: 2000px;
+
+	background-color: #f2f2f2;
+	background-image: url('body-fondo.png');
+
+	z-index: 39;
+}
+
+.wrapper{
+	position:absolute;
+	top:0px;
+	left:50%;
+	height:100%;
+	width: 1000px;
+	margin-left: -500px;
+}
+
+.juegos{
+	float:left;
+	height:500px;
+	width:1000px;
+	margin-top:50px;
+	margin-bottom: 50px;
+	background-image: url('juegos-fondo.png');
+
+	-webkit-box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
+
+	transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+}
+
+.juegos:hover{
+
+}
+
+.galeria{
+	float:left;
+	height:500px;
+	width:1000px;
+	margin-top:50px;
+	margin-bottom:50px;
+	background-image: url('galeria-fondo.png');
+
+	-webkit-box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
+
+	transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+}
+
+.galeria:hover{
+
+}
+
+@keyframes vaiven-rana {
+	0%{
+		transform:rotate(-10deg);
+	}
+	50%{
+		transform:rotate(10deg);
+	}
+	100%{
+		transform:rotate(-10deg);
+	}
+}
+
+@-webkit-keyframes vaiven-rana {
+	0%{
+		-webkit-transform:rotate(-10deg);
+	}
+	50%{
+		-webkit-transform:rotate(10deg);
+	}
+	100%{
+		-webkit-transform:rotate(-10deg);
+	}
+}
+
+@-moz-keyframes vaiven-rana {
+	0%{
+		-moz-transform:rotate(-10deg);
+	}
+	50%{
+		-moz-transform:rotate(10deg);
+	}
+	100%{
+		-moz-transform:rotate(-10deg);
+	}
+}
+
+@keyframes giro-rana {
+	0%{
+		transform:rotate(0deg);
+	}
+	50%{
+		transform:rotate(360deg);
+	}
+	100%{
+		transform:rotate(0deg);
+
+	}
+}
+
+@-webkit-keyframes giro-rana {
+	0%{
+		-webkit-transform:rotate(0deg);
+	}
+	50%{
+		-webkit-transform:rotate(360deg);
+	}
+	100%{
+		-webkit-transform:rotate(0deg);
+
+	}
+}
+
+@-moz-keyframes giro-rana {
+	0%{
+		-moz-transform:rotate(0deg);
+	}
+	50%{
+		-moz-transform:rotate(360deg);
+	}
+	100%{
+		-moz-transform:rotate(0deg);
+
+	}
+}
+
+.temporal-escaner{
+	float:left;
+	height:500px;
+	width:1000px;
+	margin-top:50px;
+	margin-bottom:50px;
+	background-image: url('temporal-fondo.png');
+
+	-webkit-box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
+
+	transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+}
+
+.barra-lateral{
+	float: left;
+	width: 300px;
+	height: 500px;
+	background-image: url('fondo-negro.png');
+}
+
+.cuadro-animalito{
+	float:left;
+	width:250px;
+	margin: 25px;
+	height:100px;
+
+	background-color: #fff;
+	background-image:url('cuadrito-juego.png');
+
+	transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+}
+
+.cuadro-animalito:hover{
+	-webkit-box-shadow: 0px 2px 30px 4px rgba(85, 181, 255, 1);
+	-moz-box-shadow:    0px 2px 30px 4px rgba(85, 181, 255, 1);
+	box-shadow:         0px 2px 30px 4px rgba(85, 181, 255, 1);
+}
