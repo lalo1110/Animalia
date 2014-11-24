@@ -26,7 +26,7 @@ body{
 	left:0px;
 	height:40px;
 	width:100%;
-	background-image: url("toolbar-fondo.png");
+	background-image: url("./Images/toolbar-fondo.png");
 
 	font-family: 'Buxton';
 	font-size: 20px;
@@ -58,7 +58,7 @@ body{
 	width: 100%;
 	height: 350px;
 
-	background-image: url("header-fondo.png");
+	background-image: url("./Images/header-fondo.png");
 
 	-webkit-box-shadow: 0px 5px 66px 1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 5px 66px 1px rgba(0,0,0,0.75);
@@ -74,7 +74,7 @@ body{
 }
 
 .header:hover{
-	background-image: url("header-fondo-2.png");
+	background-image: url("./Images/header-fondo-2.png");
 }
 
 .logo{
@@ -85,7 +85,7 @@ body{
 	height:168px;
 	margin-left:-360px;
 
-	background-image: url("header-logo.png");
+	background-image: url("./Images/header-logo.png");
 	z-index: 40;
 }
 
@@ -97,7 +97,7 @@ body{
 	height:350px;
 	margin-left:-360px;
 
-	background-image: url("header-logo-background.png");
+	background-image: url("./Images/header-logo-background.png");
 	z-index: 39;
 }
 
@@ -110,7 +110,7 @@ body{
 
 	right:100px;
 
-	background-image: url('header-arbol-2.png');
+	background-image: url('./Images/header-arbol-2.png');
 }
 
 .header-arbol-2{
@@ -122,7 +122,7 @@ body{
 
 	left:100px;
 
-	background-image: url('header-arbol-1.png');
+	background-image: url('./Images/header-arbol-1.png');
 }
 
 .toolbar{
@@ -132,7 +132,7 @@ body{
 	width:100%;
 	height:40px;
 
-	background-image: url("toolbar-fondo.png");
+	background-image: url("./Images/toolbar-fondo.png");
 	z-index: 41;
 
 	transition: all 0.5s ease;
@@ -169,7 +169,7 @@ body{
 
 	margin-right: 20px;
 
-	background-image: url("toolbar-button.png");	
+	background-image: url("./Images/toolbar-button.png");	
 
 	transition: all 0.2s ease;
 	-ms-transition: all 0.2s ease;
@@ -200,7 +200,7 @@ body{
 
 	margin-right: 20px;
 
-	background-image: url("toolbar-button.png");	
+	background-image: url("./Images/toolbar-button.png");	
 
 	transition: all 0.2s ease;
 	-ms-transition: all 0.2s ease;
@@ -231,7 +231,7 @@ body{
 	height:320px;
 	width:320px;
 
-	background-image: url('body-juego-rana.png');
+	background-image: url('./Images/body-juego-rana.png');
 
 	animation: vaiven-rana 3s infinite;
 	-webkit-animation: vaiven-rana 3s infinite;
@@ -253,7 +253,7 @@ body{
 
 	margin-right: 20px;
 
-	background-image: url("toolbar-button.png");	
+	background-image: url("./Images/toolbar-button.png");	
 
 	transition: all 0.2s ease;
 	-ms-transition: all 0.2s ease;
@@ -285,7 +285,7 @@ body{
 	height: 2000px;
 
 	background-color: #f2f2f2;
-	background-image: url('body-fondo.png');
+	background-image: url('./Images/body-fondo.png');
 
 	z-index: 39;
 }
@@ -305,7 +305,7 @@ body{
 	width:1000px;
 	margin-top:50px;
 	margin-bottom: 50px;
-	background-image: url('juegos-fondo.png');
+	background-image: url('./Images/juegos-fondo.png');
 
 	-webkit-box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
@@ -328,7 +328,7 @@ body{
 	width:1000px;
 	margin-top:50px;
 	margin-bottom:50px;
-	background-image: url('galeria-fondo.png');
+	background-image: url('./Images/galeria-fondo.png');
 
 	-webkit-box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
@@ -426,7 +426,7 @@ body{
 	width:1000px;
 	margin-top:50px;
 	margin-bottom:50px;
-	background-image: url('temporal-fondo.png');
+	background-image: url('./Images/temporal-fondo.png');
 
 	-webkit-box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 5px 103px -14px rgba(0,0,0,0.75);
@@ -443,7 +443,7 @@ body{
 	float: left;
 	width: 300px;
 	height: 500px;
-	background-image: url('fondo-negro.png');
+	background-image: url('./Images/fondo-negro.png');
 }
 
 .cuadro-animalito{
@@ -453,7 +453,7 @@ body{
 	height:100px;
 
 	background-color: #fff;
-	background-image:url('cuadrito-juego.png');
+	background-image:url('./Images/cuadrito-juego.png');
 
 	transition: all 0.2s ease;
 	-ms-transition: all 0.2s ease;
